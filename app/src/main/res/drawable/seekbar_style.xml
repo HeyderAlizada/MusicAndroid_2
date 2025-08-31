@@ -1,0 +1,30 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background track -->
+    <item android:id="@android:id/background">
+        <shape>
+            <size android:height="1dp"/>
+            <solid android:color="#444444"/> <!-- dark gray -->
+        </shape>
+    </item>
+
+    <!-- Progress (played part) -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <size android:height="1dp"/>
+                <solid android:color="@android:color/white"/> <!-- white progress -->
+            </shape>
+        </clip>
+    </item>
+
+    <!-- Secondary progress (buffered part, if any) -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <size android:height="1dp"/>
+                <solid android:color="#888888"/> <!-- lighter gray -->
+            </shape>
+        </clip>
+    </item>
+</layer-list>

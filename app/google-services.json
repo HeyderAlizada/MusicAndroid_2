@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "842501164043",
+    "project_id": "mvvmsongagain",
+    "storage_bucket": "mvvmsongagain.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842501164043:android:63baeed2529791d9fa4b0e",
+        "android_client_info": {
+          "package_name": "com.example.mvvmsongagain"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiHGC4BbgIfTnkh0cyaZo2uXzHwzgqJt0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

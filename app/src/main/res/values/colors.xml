@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="teal_200">#1ABC9C</color> <!-- bright teal -->
+    <color name="teal_700">#16A085</color> <!-- darker teal for pressed state -->
+    <color name="pretty_red">#FF6B6B</color>
+    <color name="foggy">#E43A3A3A</color> <!-- very light fog -->
+
+</resources>
