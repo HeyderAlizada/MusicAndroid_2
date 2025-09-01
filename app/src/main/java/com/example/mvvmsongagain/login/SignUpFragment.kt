@@ -53,6 +53,15 @@ class SignUpFragment : Fragment() {
             }
 
 
+            loginViewModel.isLoading.observe(viewLifecycleOwner) { loading->
+                if(loading){
+                    binding.loadingOverlay.visibility = View.VISIBLE
+                    binding.progressBar.visibility = View.VISIBLE
+                }else{
+                    binding.loadingOverlay.visibility = View.GONE
+                    binding.progressBar.visibility = View.GONE                }
+            }
+
             if (!password.isEmpty() && !email.isEmpty() && !username.isEmpty()) {
                 loginViewModel.SignupFirebase(username, email, password)
                 findNavController().navigate(SignUpFragmentDirections.actionSignUpFragmentToSearchFragment())

@@ -61,12 +61,12 @@ class LoginFragment : Fragment() {
 
         loginViewModel.isLoading.observe(viewLifecycleOwner) { loading ->
 
-            if (loading) {
+            if(loading){
+                binding.loadingOverlay.visibility = View.VISIBLE
                 binding.progressBar.visibility = View.VISIBLE
-                binding.blockerView.visibility = View.VISIBLE
-            } else {
+            }else{
+                binding.loadingOverlay.visibility = View.GONE
                 binding.progressBar.visibility = View.GONE
-                binding.blockerView.visibility = View.GONE
             }
 
         }
