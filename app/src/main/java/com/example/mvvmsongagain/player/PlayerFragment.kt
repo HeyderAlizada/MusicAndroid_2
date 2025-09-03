@@ -16,6 +16,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 class PlayerFragment : BottomSheetDialogFragment() {
+    override fun getTheme(): Int = R.style.TransparentBottomSheet
 
     private lateinit var binding: FragmentPlayerBinding
     private val args: PlayerFragmentArgs by navArgs()
