@@ -1,11 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav_settings"
+        android:id="@+id/settingsFragment"
         android:title="Settings"
         android:icon="@drawable/settings"/>
     <item
-        android:id="@+id/nav_profile"
-        android:title="Profile"
+        android:id="@+id/loginFragment"
+        android:title="Log out"
         android:icon="@drawable/baseline_person_24"/>
-
 </menu>

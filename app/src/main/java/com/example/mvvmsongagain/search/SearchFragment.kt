@@ -5,8 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mvvmsongagain.adapter.SongsAdapter
 import com.example.mvvmsongagain.databinding.FragmentSearchBinding
@@ -24,6 +27,15 @@ class SearchFragment : Fragment() {
         return binding.root
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        val navController = findNavController()
+
+        // This automatically connects nav_graph destinations ↔ menu items
+        NavigationUI.setupWithNavController(binding.navigationView, navController)
+
+        // Menu button opens drawer
+        binding.menuButton.setOnClickListener {
+            binding.drawerLayout.openDrawer(GravityCompat.START)
+        }
         binding.resultsRecycler.layoutManager = LinearLayoutManager(requireContext())
         binding.searchButton.setOnClickListener {
             val query = binding.searchView.query.trim().toString()

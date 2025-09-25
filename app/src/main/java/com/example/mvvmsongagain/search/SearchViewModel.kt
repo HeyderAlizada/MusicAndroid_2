@@ -23,7 +23,7 @@ class SearchViewModel : ViewModel() {
                 _searchResults.value = response.data
 
             } catch (e: Exception) {
-                _error.value = e.message
+                _error.value = "couldn't access the internet"
             }
         }
     }

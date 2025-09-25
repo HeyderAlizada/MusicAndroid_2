@@ -30,8 +30,8 @@
                 android:layout_height="40dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="Menu"
-                android:src="@drawable/ic_menu"
-                android:tint="@android:color/white" />
+                android:src="@drawable/baseline_person_24"
+                app:tint="@android:color/white" />
 
             <SearchView
                 android:id="@+id/search_view"
@@ -81,5 +81,6 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="@color/black"
-        app:menu="@menu/menu" />
+        app:menu="@menu/menu"
+        app:headerLayout="@layout/drawer_header"/>
 </androidx.drawerlayout.widget.DrawerLayout>
